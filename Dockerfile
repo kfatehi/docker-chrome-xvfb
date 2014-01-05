@@ -15,3 +15,4 @@ RUN chmod a+x /etc/init.d/xvfb
 
 # Allow root to execute Google Chrome by replacing launch script
 ADD google-chrome-launcher /usr/bin/google-chrome
+RUN chmod a+x /usr/bin/google-chrome
