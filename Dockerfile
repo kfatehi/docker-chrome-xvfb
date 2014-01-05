@@ -12,3 +12,6 @@ RUN unzip /srv/chromedriver_linux64.zip -d /usr/local/bin
 # Install Xvfb init script
 ADD xvfb_init /etc/init.d/xvfb
 RUN chmod a+x /etc/init.d/xvfb
+
+# Allow root to execute Google Chrome by replacing launch script
+ADD google-chrome-launcher /usr/bin/google-chrome
